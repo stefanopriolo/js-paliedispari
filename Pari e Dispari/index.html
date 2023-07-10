@@ -64,22 +64,48 @@
           </div>
         </div>
       </div>
-      <div class="row text-center">
+      <div class="row justify-content-between p-3">
         <span>Inserisci un numero (1-5)</span>
-        <input type="number" name="inputnumber" id="inputNumber" />
+        <div class="col d-flex justify-content-between">
+          <input
+            type="number"
+            name="inputnumber"
+            id="userNumber"
+            max="5"
+            min="1"
+          />
+
+          <input
+            id="ok-Button"
+            class="btn-number bg-diamond"
+            type="button"
+            value="Ok"
+          />
+        </div>
       </div>
     </div>
     <div class="container bg-lucky">
       <div class="row justify-content-center p-5">
         <div class="col d-flex justify-content-center">
-          <input class="btn-submit bg-diamond" type="button" value="Tira!" />
+          <input
+            id="launch-button"
+            class="btn-submit bg-diamond"
+            type="button"
+            value="Tira!"
+          />
         </div>
       </div>
     </div>
     <div class="container">
       <div class="row">
         <div class="col text-center p-4">
-          <img class="coin" src="/Pari e Dispari/imgs/giphy.gif" alt="" />
+          <img
+            class="coin"
+            id="coin"
+            src="/Pari e Dispari/imgs/giphy.gif"
+            alt=""
+            style="visibility: hidden"
+          />
         </div>
       </div>
     </div>

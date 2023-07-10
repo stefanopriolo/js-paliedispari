@@ -15,6 +15,11 @@
 
 }
 
+.btn-number {
+    width: 4rem;
+    height: 2rem;
+}
+
 .bg-lucky {
     background-image: url(/Pari\ e\ Dispari/imgs/lucky.avif);
 }
@@ -25,5 +30,4 @@
 
 .coin {
     width: 30%;
-    display: none;
 }
