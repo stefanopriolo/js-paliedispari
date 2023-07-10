@@ -6,7 +6,6 @@ document.getElementById("ok-Button").addEventListener("click", function () {
 });
 
 document.getElementById("launch-button").addEventListener("click", function () {
-  console.log(userNumber);
   function pcGenerator() {
     let pcNumber = 0;
     pcNumber = Math.floor(Math.random() * 6);
@@ -24,15 +23,23 @@ document.getElementById("launch-button").addEventListener("click", function () {
 
   setTimeout(() => {
     coin.style.visibility = "hidden";
-  }, 2000);
+  }, 1200);
 
   showImage();
 
-  function oddOrEven() {
-    if (sum % 2 === 0) {
-      console.log("Ha vinto pari!");
-    } else console.log("Ha vinto dispari!");
+  function radioChoise() {
+    const radioButtons = document.querySelectorAll('input[type="radio"]');
+    if (document.getElementById("flexRadioDefault1").checked && sum % 2 === 0) {
+      console.log("Hai vinto!");
+    } else if (
+      document.getElementById("flexRadioDefault2").checked &&
+      sum % 2 !== 0
+    ) {
+      console.log("Hai vinto!");
+    } else {
+      console.log("Hai perso!");
+    }
   }
 
-  oddOrEven();
+  radioChoise();
 });
