@@ -1,0 +1,29 @@
+.bg-green {
+    background-color: #012910;
+}
+
+.bg-blue {
+    background-color: #129fe8;
+}
+
+.btn-submit {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.bg-lucky {
+    background-image: url(/Pari\ e\ Dispari/imgs/lucky.avif);
+}
+
+.bg-diamond {
+    background-image: url(/Pari\ e\ Dispari/imgs/diamond.jpg);
+}
+
+.coin {
+    width: 30%;
+    display: none;
+}
