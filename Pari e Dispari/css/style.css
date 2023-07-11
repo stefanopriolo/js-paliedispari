@@ -31,3 +31,11 @@
 .coin {
     width: 30%;
 }
+
+#result {
+    font-size: 3rem;
+}
+
+.marginNeg {
+    margin-top: -15rem;
+}
